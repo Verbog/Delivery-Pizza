@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#header" class="menu-logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="navigation">
+            <a href="#description" class="nav-item">О нас</a>
+            <a href="#popular" class="nav-item">Популярные</a>
+            <a href="#cheef-info" class="nav-item">Шеф-повар</a>
+            <a href="#contact" class="nav-item">Заказать</a>
+        </div>
+    </div>
+
+    <div class="header" id="header">
+        <div class="header-content">
+            <h1 class="header-title">Доставка пиццы</h1>
+            <a href="#contact" class="order">
+                <button class="order btn">Заказать</button>
+                <img src="img/delivery_btn_logo.svg" alt="bike" class="bike">
+            </a>
+
+        </div>
+        <div class="header-bg"></div>
+    </div>
+
+    <div class="description" id="description">
+        <h2 class="desc-title">Мы доставляем пиццу</h2>
+        <p class="desc-text">
+            Оформи заказ и мы привезем тебе горячую пиццу.
+            30 минут или бесплатно.
+        </p>
+    </div>
+
+    <div class="popular" id="popular">
+        <h2 class="pop-title">Cамые популярные</h2>
+        <div class="popular-card">
+            <img src="img/pizzatomato.png" alt="margarita" class="card-img">
+            <h3 class="card-title">Маргарита</h3>
+            <p class="card-desc">Классическая пицца. Отличный выбор для вегетарианцев</p>
+        </div>
+
+        <div class="popular-card">
+            <img src="img/pizzameat.png" alt="meat" class="card-img">
+            <h3 class="card-title">Мясная</h3>
+            <p class="card-desc">Максимум мяса на квадратный сантиметр пиццы</p>
+        </div>
+
+        <div class="popular-card">
+            <img src="img/pizzacheeses.png" alt="4cheese" class="card-img">
+            <h3 class="card-title">4 сыра</h3>
+            <p class="card-desc">Для любителей сыра и по-больше</p>
+        </div>
+    </div>
+
+    <div class="cheef-info" id="cheef-info">
+        <img src="img/cheef.png" alt="cheef" class="chef-img">
+        <div class="cheef-desc">
+            <h2 class="cheef-title">Наш повар из Италии</h2>
+            <p class="cheef-text">Его семья выпекает пиццу уже на протяжении 200 лет. Он принес свои семейные рецепты
+                нам в рестораны. Особый способ готовки теста, лучшие игредиенты и фамильный опыт - все это делает нашу
+                пиццу лучшей. </p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <form>
+            <!-- в это секции возможны ошибки -->
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <input type="text" placeholder="имя" class="personal">
+                <input type="text" placeholder="адрес" class="personal">
+            </fieldset>
+
+            <!-- в это секции чего-то не хватает -->
+            <fieldset>
+                <legend> Дополнительно </legend>
+                <div class="gluten-container">
+                    <p class="gluten-p"> Аллергия на глютен</p>
+                    <label for="gluten" class="gluten-lb">Да</label>
+                    <input type="radio" name="gluten" class="gluten" value="">
+                    <label for="gluten" class="gluten-lb">Нет</label>
+                    <input type="radio" name="gluten" class="gluten" value="">
+                </div>
+
+                <!-- в это секции возможно несколько ошибок -->
+                <div class="cheese-container">
+                    <label for="cheese-dough" class="cheese-lb">Cырный бортик</label>
+                    <input type="checkbox" id="cheese-dough" class="cheese-dough" value="hasCheeese">
+                </div>
+                <select class="adress">
+
+
+
+                <option value="rest-1">Ресторан на ул. Пушкина</option>
+                <option value="rest-2">Ресторан на ул. Пионерской</option>
+                <option value="rest-3">Ресторан на ул. Гагарина</option>
+                </select>
+                <label for="comment">Дополнительно</label>
+                <textarea name="" id="comment"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <!-- В это секции возможно несколько ошибок -->
+                <legend>Выберите пиццы</legend>
+
+                <label for="pizza1" class="pizza-lb">Маргарита</label>
+                <input type="checkbox" class="pizza" id="pizza1" value="marg">
+
+                <label for="pizza2" class="pizza-lb">Пеперони</label>
+                <input type="checkbox" class="pizza" id="pizza2" value="marg">
+
+                <label for="pizza3" class="pizza-lb">Мясная</label>
+                <input type="checkbox" class="pizza" id="pizza3" value="marg">
+
+                <label for="pizza4" class="pizza-lb">4 сыра</label>
+                <input type="checkbox" class="pizza" id="pizza4" value="marg">
+
+                <label for="pizza5" class="pizza-lb">Рыбная</label>
+                <input type="checkbox" class="pizza" id="pizza5" value="marg">
+
+                <label for="pizza6" class="pizza-lb">Сладкая</label>
+                <input type="checkbox" class="pizza" id="pizza6" value="marg">
+
+            </fieldset>
+
+        </form>
+    </div>
+    <button class="submit">Сделать заказ</button>
+</body>
+
+</html>
